@@ -4,7 +4,7 @@ A custom userChrome file to make Firefox look like epiphany, and blend in with t
 This is still a work in progress, so bugs are expected.
 
 ## Screenshots
-![screenshot]()
+![screenshot](https://github.com/Angalexik/firefox-epiphany-theme/raw/master/screenshots/screenshot.png)
 
 ## Prerequisites
 [OS Style Close Button](https://addons.mozilla.org/cs/firefox/addon/os-style-close-window-button/?src=search)
@@ -14,7 +14,9 @@ This is still a work in progress, so bugs are expected.
 ## Instalation
 Install the required prerequisites
 Position the close and maximize buttons like this:
-![toolbar]() Two icons on the left and right with an overflow menu.
+![toolbar](https://github.com/Angalexik/firefox-epiphany-theme/raw/master/screenshots/toolbar.png)
+
+Two icons on the left and right with an overflow menu.
 
 In firefox navigate to [about:config](about:config)
 Search for `toolkit.legacyUserProfileCustomizations.stylesheets`
