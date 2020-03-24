@@ -1,0 +1,170 @@
+#TabsToolbar > .titlebar-buttonbox-container{ visibility: collapse !important; }
+
+.titlebar-buttonbox-container {
+	display: none !important;
+}
+
+.titlebar-buttonbox-container > .titlebar-buttonbox{ height: 100%; }
+
+#titlebar{
+ -moz-box-ordinal-group: 2;
+ -moz-appearance: none !important;
+}
+
+.titlebar-placeholder,
+#TabsToolbar .titlebar-spacer{ display: none; }
+/* Also hide the toolbox bottom border which isn't at bottom with this setup */
+#navigator-toolbox::after{ display: none !important; }
+
+@media (-moz-gtk-csd-close-button){ .titlebar-button{ -moz-box-orient: vertical } }
+
+#nav-bar {
+  height: 47px !important;
+  padding: 0px 45px 0px 45px !important;
+
+  background: linear-gradient(#e7e7e7, #d1d1d1) !important;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  border-top-width: 0px !important;
+  border-bottom: 1px solid #979797 !important;
+  box-shadow:
+    inset 0 1px 0 0 rgba(255,255,255, 0.2),
+    inset 0 -1px 0 0 rgba(255,255,255, 0.2) !important;
+}
+
+.tab-line {
+  display: none !important;
+}
+
+#TabsToolbar{
+  background: linear-gradient(#cbcbcb, #d5d5d5) !important;
+  border-bottom: 1px solid #898989 !important;
+  box-shadow: inset 0 1px 2px 1px rgba(0, 0, 0, 0.1) !important;
+  max-height: 30px !important;
+  min-height: 30px !important;
+}
+
+#tabbrowser-tabs {
+  padding-inline-start: 0 !important;
+  --tab-min-height: 29px !important;
+  max-height: 29px !important;
+  width: 100%;
+}
+
+.tabbrowser-tab {
+  max-height: 29px !important;
+  direction: rtl;
+  margin-left: -1px !important;
+}
+
+.tabbrowser-tab:first-child {
+  margin-left: 0 !important;
+}
+
+.tabbrowser-tab:not([visuallyselected="true"]) {
+  border-left: 1px solid transparent !important;
+}
+
+.tabbrowser-tab::before,
+.tabbrowser-tab::after {
+  display: none !important;
+}
+
+.tab-background {
+  border-top: 0 !important;
+}
+
+.tabbrowser-tab {
+  border-top: 1px solid none !important;
+  border-left: 1px solid #898989 !important;
+  border-right: 1px solid #898989 !important;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1) !important;
+}
+
+.tab-background[selected="true"] {
+  background-attachment: none !important;
+  background: linear-gradient(to bottom, #d1d1d1, #c7c7c7) !important;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  box-shadow:
+    inset 0 1px 0 0 rgba(255,255,255, 0.2),
+    inset 0 -1px 0 0 rgba(255,255,255, 0.2),
+    inset 1px 0 0 0 rgba(255,255,255, 0.2),
+    inset -1px 0 0 0 rgba(255,255,255, 0.2) !important;
+}
+
+.tab-label {
+  -moz-box-flex: 1 !important;
+  color: #4b4b4b !important;
+  text-align: center !important;
+  text-shadow: 0 1px 0 rgba(255,255,255, 0.4) !important;
+}
+
+.tab-close-button {
+  list-style-image: url(assets/close-tab.svg) !important;
+}
+
+#new-tab-button {
+  list-style-image: url(assets/new-tab.svg) !important;
+}
+
+#back-button {
+  list-style-image: url(assets/back.svg) !important;
+  transform: scale(150%, 150%);
+}
+
+#forward-button {
+  list-style-image: url(assets/forward.svg) !important;
+  transform: scale(150%, 150%);
+}
+
+#reload-button {
+  list-style-image: url(assets/reload.svg) !important;
+  transform: scale(150%, 150%) !important;
+}
+
+#stop-button {
+  list-style-image: url(assets/cancel.svg) !important;
+  transform: scale(150%, 150%) !important;
+}
+
+#home-button {
+  list-style-image: url(assets/home.svg) !important;
+  transform: scale(150%, 150%) !important;
+}
+
+#urlbar,
+#searchbar .searchbar-textbox {
+  margin-top: 11px !important;
+  margin-bottom: 11px !important;
+  max-height: 25px !important;
+  min-height: 25px !important;
+
+  background: linear-gradient(to bottom, #eee, #fff) !important;
+  background-clip: padding-box !important;
+  border: 1px solid rgba(0,0,0, 0.25) !important;
+  border-radius: 2.5px !important;
+  box-shadow: 
+              inset 0 0 0 1px rgba(0,0,0, 0.06),
+              0 1px 0 0 rgba(255,255,255, 0.3) !important;
+}
+
+#tracking-protection-icon-container {
+  display: none !important;
+}
+
+.toolbarbutton-1:not(#new-tab-button) {
+  margin-bottom: 4px !important;
+}
+
+#os_style_close_trampover_gmail_com-browser-action {
+  transform: translateX(-155px) !important;
+  list-style-image: url(assets/close-tab.svg) !important;
+}
+
+#os_style_max_trampover_gmail_com-browser-action {
+  list-style-image: url(assets/maximize.svg) !important;
+  transform: translateX(155px) !important;
+}
